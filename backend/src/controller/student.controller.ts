@@ -7,7 +7,7 @@ export class StudentController {
   create = async (req: Request, res: Response) =>
     res.json(await service.createStudent(req.body));
 
-  getAll = async (_req: Request, res: Response) =>
+  getAll = async (req: Request, res: Response) =>
     res.json(await service.getStudents());
 
   getOne = async (req: Request, res: Response) =>
